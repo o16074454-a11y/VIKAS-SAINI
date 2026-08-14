@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a331c" />
+      <stop offset="45%" stop-color="#181c10" />
+      <stop offset="100%" stop-color="#0a0c07" />
+    </radialGradient>
+
+    <!-- Brass / Gold Metallic Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf3d8" />
+      <stop offset="25%" stop-color="#d4a359" />
+      <stop offset="50%" stop-color="#8c6426" />
+      <stop offset="75%" stop-color="#ebd095" />
+      <stop offset="100%" stop-color="#a0742f" />
+    </linearGradient>
+
+    <linearGradient id="innerGold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8c6426" />
+      <stop offset="50%" stop-color="#ebd095" />
+      <stop offset="100%" stop-color="#d4a359" />
+    </linearGradient>
+
+    <!-- Grass Green Gradients -->
+    <linearGradient id="grassGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0e230d" />
+      <stop offset="50%" stop-color="#1b4d1b" />
+      <stop offset="100%" stop-color="#38a138" />
+    </linearGradient>
+
+    <linearGradient id="grassBlade" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+
+    <!-- Warm Golden Sun Glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#d97706" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Container / App Icon Silhouette -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Brass Ornamental Ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="url(#goldGrad)" stroke-width="8" filter="url(#shadow)" />
+  <circle cx="256" cy="256" r="226" fill="none" stroke="#ebd095" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.7" />
+
+  <!-- Inner Ambient Sun & Sky Glow -->
+  <circle cx="256" cy="256" r="220" fill="url(#sunGlow)" />
+
+  <!-- Distant Village Trees & Horizon -->
+  <path d="M 50 330 Q 120 270 190 310 Q 260 260 340 300 Q 420 250 462 330 L 462 480 L 50 480 Z" fill="#142614" opacity="0.85" />
+  <path d="M 40 360 Q 150 300 250 340 Q 360 290 472 360 L 472 480 L 40 480 Z" fill="#1b3d1b" />
+
+  <!-- Radiant Sunrise Rays Behind Head -->
+  <g stroke="#f59e0b" stroke-width="2" opacity="0.25" stroke-dasharray="12,12">
+    <line x1="256" y1="230" x2="110" y2="120" />
+    <line x1="256" y1="230" x2="160" y2="90" />
+    <line x1="256" y1="230" x2="256" y2="70" />
+    <line x1="256" y1="230" x2="352" y2="90" />
+    <line x1="256" y1="230" x2="402" y2="120" />
+  </g>
+
+  <!-- Stylized Illustration of Vikas Smiling in Grass -->
+  <!-- Shoulders & Chequered Village Shirt -->
+  <path d="M 120 420 Q 256 360 392 420 L 420 470 Q 256 490 92 470 Z" fill="#f8fafc" />
+  <!-- Shirt Plaid Patterns (Purple/Pink & Brown Stripes like photo) -->
+  <path d="M 170 395 L 150 460" stroke="#9333ea" stroke-width="4" opacity="0.75" />
+  <path d="M 210 380 L 200 465" stroke="#9333ea" stroke-width="4" opacity="0.75" />
+  <path d="M 302 380 L 312 465" stroke="#9333ea" stroke-width="4" opacity="0.75" />
+  <path d="M 342 395 L 362 460" stroke="#9333ea" stroke-width="4" opacity="0.75" />
+  <path d="M 130 430 Q 256 390 382 430" stroke="#c084fc" stroke-width="3" fill="none" opacity="0.7" />
+
+  <!-- Folded Arms Resting on Grass -->
+  <ellipse cx="256" cy="400" rx="100" ry="32" fill="#d97706" opacity="0.2" />
+  <path d="M 160 380 Q 256 425 352 380 Q 256 445 160 380 Z" fill="#d49a6a" />
+  
+  <!-- Sacred Red-Yellow Kalava (Thread) on wrist from photo -->
+  <path d="M 285 405 Q 295 398 305 408" stroke="#dc2626" stroke-width="4" fill="none" />
+  <path d="M 283 408 Q 295 401 307 411" stroke="#facc15" stroke-width="3" fill="none" />
+
+  <!-- Neck -->
+  <path d="M 228 320 L 228 360 Q 256 375 284 360 L 284 320 Z" fill="#c68a58" />
+
+  <!-- Head / Face (Vikas Portrait Silhouette & Highlights) -->
+  <ellipse cx="256" cy="245" rx="68" ry="84" fill="#d49a6a" filter="url(#shadow)" />
+  
+  <!-- Ears -->
+  <ellipse cx="186" cy="250" rx="12" ry="20" fill="#c68a58" />
+  <ellipse cx="326" cy="250" rx="12" ry="20" fill="#c68a58" />
+  
+  <!-- Stylized Hair (Messy voluminous stylish hair from photo) -->
+  <path d="M 182 225 Q 186 150 256 142 Q 326 150 330 225 Q 338 185 315 155 Q 285 130 240 135 Q 195 145 182 225 Z" fill="#181512" />
+  <path d="M 188 210 Q 220 160 280 160 Q 320 170 326 215 Q 310 180 270 175 Q 220 175 188 210 Z" fill="#2d251e" />
+
+  <!-- Facial Features: Expressive Dark Eyes with Warm Smile -->
+  <!-- Eyebrows -->
+  <path d="M 205 212 Q 225 204 240 214" stroke="#1c1917" stroke-width="4" stroke-linecap="round" fill="none" />
+  <path d="M 307 212 Q 287 204 272 214" stroke="#1c1917" stroke-width="4" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes -->
+  <ellipse cx="225" cy="228" rx="11" ry="8" fill="#ffffff" />
+  <circle cx="225" cy="228" r="5.5" fill="#1c1917" />
+  <circle cx="227" cy="226" r="2" fill="#ffffff" />
+
+  <ellipse cx="287" cy="228" rx="11" ry="8" fill="#ffffff" />
+  <circle cx="287" cy="228" r="5.5" fill="#1c1917" />
+  <circle cx="289" cy="226" r="2" fill="#ffffff" />
+
+  <!-- Nose -->
+  <path d="M 256 220 L 253 260 Q 256 266 263 262" stroke="#a76839" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Mustache & Warm Smile -->
+  <path d="M 226 276 Q 256 284 286 276" stroke="#26201a" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6" />
+  <path d="M 228 288 Q 256 312 284 288 Q 256 322 228 288 Z" fill="#ffffff" stroke="#991b1b" stroke-width="1.5" />
+
+  <!-- Lush Green Grass Blades Rising in Foreground (From Photo Aesthetic) -->
+  <g fill="url(#grassBlade)">
+    <path d="M 60 480 Q 80 340 100 280 Q 90 380 95 480 Z" />
+    <path d="M 120 480 Q 150 310 175 250 Q 155 370 145 480 Z" />
+    <path d="M 180 480 Q 210 330 220 285 Q 205 385 195 480 Z" />
+    <path d="M 230 480 Q 252 350 258 310 Q 248 390 240 480 Z" />
+    <path d="M 270 480 Q 285 340 295 300 Q 280 390 275 480 Z" />
+    <path d="M 320 480 Q 345 320 370 260 Q 345 370 335 480 Z" />
+    <path d="M 380 480 Q 410 330 435 290 Q 410 380 395 480 Z" />
+    <path d="M 430 480 Q 450 360 465 310 Q 445 400 440 480 Z" />
+  </g>
+  <!-- Light Vibrant Foreground Grass Overlay -->
+  <g fill="#4ade80" opacity="0.8">
+    <path d="M 95 480 Q 130 360 140 320 Q 125 410 115 480 Z" />
+    <path d="M 245 480 Q 256 370 262 335 Q 252 410 248 480 Z" />
+    <path d="M 365 480 Q 380 370 395 325 Q 380 410 375 480 Z" />
+  </g>
+
+  <!-- Golden Wheat / Sheaf Accents on Sides -->
+  <g stroke="url(#goldGrad)" stroke-width="3" fill="#ebd095" opacity="0.9">
+    <!-- Left Wheat -->
+    <path d="M 80 360 Q 60 270 95 200" fill="none" />
+    <ellipse cx="95" cy="200" rx="6" ry="12" transform="rotate(25 95 200)" />
+    <ellipse cx="88" cy="225" rx="6" ry="12" transform="rotate(35 88 225)" />
+    <ellipse cx="102" cy="235" rx="6" ry="12" transform="rotate(-15 102 235)" />
+    
+    <!-- Right Wheat -->
+    <path d="M 432 360 Q 452 270 417 200" fill="none" />
+    <ellipse cx="417" cy="200" rx="6" ry="12" transform="rotate(-25 417 200)" />
+    <ellipse cx="424" cy="225" rx="6" ry="12" transform="rotate(-35 424 225)" />
+    <ellipse cx="410" cy="235" rx="6" ry="12" transform="rotate(15 410 235)" />
+  </g>
+
+  <!-- Bottom Arch Brass Banner Plate -->
+  <path d="M 90 430 Q 256 475 422 430 Q 428 475 422 485 Q 256 525 90 485 Q 84 475 90 430 Z" fill="#14160e" stroke="url(#goldGrad)" stroke-width="4" filter="url(#shadow)" />
+
+  <!-- App Title Typography in Emblem -->
+  <text x="256" y="468" text-anchor="middle" font-family="'Yatra One', 'Rozha One', serif, 'Arial'" font-weight="900" font-size="28" fill="#fdf3d8" letter-spacing="1.5" filter="url(#glow)">
+    गांव के दिन
+  </text>
+  <text x="256" y="492" text-anchor="middle" font-family="'Yatra One', serif, 'Arial'" font-size="16" font-weight="bold" fill="#d4a359" letter-spacing="3">
+    ★ विकास के साथ ★
+  </text>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "Remix गांव के दिन विकास के साथ",
+  "description": "एक भावुक और संस्मरणों से भरा डिजिटल अनुभव - गांव के सुनहरे दिन, खेत-खलिहान, 90s के नगमे और विकास के साथ बिताए हसीन पल।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

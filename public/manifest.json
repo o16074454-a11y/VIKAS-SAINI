@@ -1,0 +1,26 @@
+{
+  "name": "गांव के दिन विकास के साथ",
+  "short_name": "गांव के दिन",
+  "description": "एक भावुक और संस्मरणों से भरा डिजिटल अनुभव - गांव के सुनहरे दिन, खेत-खलिहान, 90s के नगमे और विकास के साथ बिताए हसीन पल।",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0e0a",
+  "theme_color": "#0d0e0a",
+  "categories": ["lifestyle", "music", "entertainment"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "96x96 128x128 192x192 256x256",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
